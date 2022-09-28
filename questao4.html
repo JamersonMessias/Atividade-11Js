@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão-4</title>
+</head>
+<body>
+    <script>
+        const nomeCliente = String(prompt("Digitir seu nome? "))
+        const valorDeComprar = Number(prompt('Qual Valor da compra:?'))
+        if(valorDeComprar <= 200){
+            valorComDesconto = valorDeComprar - valorDeComprar*0.10
+            alert(`Nome de Cliente: ${nomeCliente}\nValor de Comprar: ${valorDeComprar.toFixed(2)}\nPorcentagens de desconto: 10%, Valor do desconto: ${(valorDeComprar*0.10).toFixed(2)}\nValor total a pagar: ${valorComDesconto.toFixed(2)}`)
+        } else if(200 < valorDaCompra <= 500){
+            valorComDesconto = valorDeComprar - valorDeComprar*0.15
+            alert(`Nome do Cliente: ${nomeCliente}\nValor de Comprar: ${valorDaCompra.toFixed(2)}\nPorcentagens de desconto: 15%, Valor do desconto: ${(valorDeComprar*0.15).toFixed(2)}\nValor total a pagar: ${valorComDesconto.toFixed(2)}`)
+        } else if(valorDaCompra > 500){
+            valorComDesconto = valorDeComprar - valorDeComprar*0.2
+            alert(`Nome do Cliente: ${nomeCliente}\nValor de Comprar: ${valorDaCompra.toFixed(2)}\nPorcentagens de desconto: 20%, Valor do desconto: ${(valorDeComprar*0.2).toFixed(2)}\nValor total a pagar: ${valorComDesconto.toFixed(2)}`)
+        }
+    </script>
+
+
+</body>
+</html>
